@@ -1,7 +1,7 @@
 import { createUser, getTianqi, getUsers } from "@/service";
 
 export default async function Demo() {
-  // const tianqi = await getTianqi();
+  const tianqi = await getTianqi();
   const users = await getUsers();
 
   // async function create() {
@@ -13,8 +13,8 @@ export default async function Demo() {
 
   return (
     <main>
-      {/* <pre>{JSON.stringify(users, null, 2)}</pre>
-      <pre>{JSON.stringify(tianqi, null, 2)}</pre> */}
+      <pre>{JSON.stringify(users, null, 2)}</pre>
+      <pre>{JSON.stringify(tianqi, null, 2)}</pre>
       {/* <button
         onClick={async () => {
           create();
