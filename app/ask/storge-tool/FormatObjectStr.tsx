@@ -26,10 +26,12 @@ export const FormatObjectStr = () => {
 
     lineArr.forEach((v, i) => {
       if (
-        v.endsWith("]),") ||
         v.endsWith("])") ||
+        v.endsWith("]),") ||
+        v.endsWith('])",') ||
+        v.endsWith("})") ||
         v.endsWith("}),") ||
-        v.endsWith("})")
+        v.endsWith("})\",")
       ) {
         curIndentLevel--;
       }
