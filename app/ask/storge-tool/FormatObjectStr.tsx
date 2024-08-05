@@ -7,9 +7,7 @@ import React from "react";
  * 格式化数据库中的大对象
  */
 export const FormatObjectStr = () => {
-  const [value, setValue] = React.useState(
-    '(["rank":(["first_rank":([]),"act_end_time":1740911400,"data":([1:(["score":4000368,"exp":368,"percent":4829,"level":4,"now":1722820259,"name":"天尊","gid":"66A7A21EB634730001F9",]),0:(["exp":410,"score":4000410,"percent":5380,"name":"天亦","now":1722529548,"level":4,"gid":"66A7DE38A9D7DA0001F9",]),]),]),])'
-  );
+  const [value, setValue] = React.useState("");
 
   const [formatValue, setFormatValue] = React.useState("");
 
