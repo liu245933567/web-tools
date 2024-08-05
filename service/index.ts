@@ -1,6 +1,5 @@
 "use server";
 import prisma from "@/prisma";
-import type { AskUser } from "@prisma/client";
 
 /**
  * 请求天气
@@ -17,17 +16,3 @@ export async function getTianqi() {
 
   return res.json();
 }
-
-export async function getUsers() {
-  const users = await prisma.askUser.findMany();
-
-  return users;
-}
-
-export const createUser = async (user: Omit<AskUser, "id">) => { 
-  const newUser = await prisma.askUser.create({
-    data: user,
-  });
-
-  return newUser;
-};
